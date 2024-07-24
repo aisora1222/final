@@ -2,7 +2,7 @@
 
 Sports Car Comparison Website using React and Syled using "styled-components"
 
-Website Details: Allows you to compare different flagship high-performance sports cars specifications (Listed below). It implements drag and drop functionality for ease of use.
+Website Details: Allows you to compare different flagship high-performance sports cars specifications (Listed below). It implements drag and drop functionality for ease of use. *Not all car models available*
 
 Local Install Instructions: Clone or download the repo, then use terminal to install npm with the "npm install" command. Then run locally using the IDE or "npm run dev" in the terminal.
 
