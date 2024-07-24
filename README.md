@@ -13,7 +13,7 @@ Table of Contents:
   - React Component 1: Car.jsx
 	 - Displays car details
 	 - Specs to show:
-    		- Speed 0-60
+- Speed 0-60
       		- Price
       		- Manufacturer
       		- Model Name
