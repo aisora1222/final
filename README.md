@@ -14,7 +14,8 @@ Table of Contents:
 	 - Displays car details
 	 - Specs to show:
    		- Speed (0-60)
-     -  
+     		- Price
+       		- Manufacturer 
 
  - React Component 2: CarList.jsx
 	- Backlog of the cars:
