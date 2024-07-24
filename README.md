@@ -13,19 +13,8 @@ Table of Contents:
   - React Component 1: Car.jsx
 	 - Displays car details
 	 - Specs to show:
-		- Speed 0-60
-     		- Price
-         	- Manufacturer
-      		- Model Name
-      		- Most updated year
-      		- Image
-      		- Weight
-    		- Horsepower
-    		- Torque
-      		- Size
-      		- Number of seats
-      		- Car Category
-      		- Country of Origin
+   		- Speed (0-60)
+     -  
 
  - React Component 2: CarList.jsx
 	- Backlog of the cars:
