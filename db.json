@@ -1,12 +1,17 @@
 {
   "lanes": [
-    { "id": 1, "title": "Car 1" },
-    { "id": 2, "title": "Car 2" }
+    { "id": 1, "title": "To Do" },
+    { "id": 2, "title": "In Progress" },
+    { "id": 3, "title": "Review" },
+    { "id": 4, "title": "Done" }
   ],
   "tasks": [
     { "id": 1, "title": "Grocery", "body": "Banana, Water", "lane": 1 },
     { "id": 2, "title": "Finish MP3", "body": "Too Hard", "lane": 1 },
     { "id": 3, "title": "Finish Writing Homework", "body": "Too Many", "lane": 2 },
-    { "id": 4, "title": "Book Plane Ticket", "body": "Around August 9?", "lane": 2 }
+    { "id": 4, "title": "Book Plane Ticket", "body": "Around August 9?.", "lane": 2 },
+    { "id": 5, "title": "Look for New Apartment", "body": "Make some candidates", "lane": 3 },
+    { "id": 6, "title": "Go to Bank", "body": "Withdraw money", "lane": 3 },
+    { "id": 7, "title": "Fill up gas", "body": "Speeway in Allston", "lane": 4 }
   ]
 }
