@@ -4,9 +4,9 @@
     { "id": 2, "title": "Car 2" }
   ],
   "cars": [
-    { "id": 1, "title": "M5 CS", "Brand": "BMW" },
-    { "id": 2, "title": "Huracan STO", "body": "Lamborghini" },
-    { "id": 3, "title": "SF90", "body": "Ferrari" },
-    { "id": 4, "title": "720S", "body": "McLaren" }
+    { "id": 1, "image": "", "manufacturer": "", "model": "", "year": "", "country": "", "category": "", "price": "", "zerosixty": "", "weight": "", "hp": "", "torque": "", "size": "", "seats": ""},
+    { "id": 2, "image": "", "manufacturer": "", "model": "", "year": "", "country": "", "category": "", "price": "", "zerosixty": "", "weight": "", "hp": "", "torque": "", "size": "", "seats": ""},
+    { "id": 3, "image": "", "manufacturer": "", "model": "", "year": "", "country": "", "category": "", "price": "", "zerosixty": "", "weight": "", "hp": "", "torque": "", "size": "", "seats": ""},
+    { "id": 4, "image": "", "manufacturer": "", "model": "", "year": "", "country": "", "category": "", "price": "", "zerosixty": "", "weight": "", "hp": "", "torque": "", "size": "", "seats": ""}
   ]
 }
