@@ -14,8 +14,8 @@ Table of Contents:
 	 - Displays car details
 	 - Specs to show:
 		- Speed 0-60
-      		- Price
-      		- Manufacturer
+     		- Price
+         	- Manufacturer
       		- Model Name
       		- Most updated year
       		- Image
