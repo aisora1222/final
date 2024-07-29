@@ -11,6 +11,8 @@ const BoardWrapper = styled.div`
     flex-wrap: wrap;
 `;
 
+
+
 const lanes = [
     { id: 1, title: 'Car 1' },
     { id: 2, title: 'Car 2' }
@@ -23,6 +25,8 @@ function onDragStart(e, id) {
 function onDragOver(e) {
     e.preventDefault();
 }
+
+
 
 function Board() {
     const [loading, error, data] = useDataFetching(
@@ -105,7 +109,9 @@ function Board() {
                     highlightAttributes={highlightAttributes}
                 />
             ))}
+
         </BoardWrapper>
+
     );
 }
 

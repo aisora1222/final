@@ -38,6 +38,23 @@ const BacklogWrapper = styled.div`
     margin-left: 20px;
 `;
 
+const Button = styled.button`
+    background-color: #E13D3D;
+    min-height: 5vh;
+    min-width: 10%;
+    margin: auto 0;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    font-size: calc(10px + 1vmin);
+    font-family: "American Typewriter";
+    
+`;
+function clear() {
+    window.location.reload();
+}
+
+
 function App() {
     return (
         <>
@@ -45,6 +62,7 @@ function App() {
             <GlobalStyle />
             <AppWrapper>
                 <Header />
+                <Button onClick={() => clear()}> Reset </Button>
                 <ContentWrapper>
                     <BoardWrapper>
                         <Board />
@@ -53,6 +71,7 @@ function App() {
                         <Backlog />
                     </BacklogWrapper>
                 </ContentWrapper>
+
             </AppWrapper>
         </>
     );
