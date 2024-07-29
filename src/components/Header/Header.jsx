@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 const HeaderWrapper = styled.div`
-    background-color: blue;
-    height: 50px; 
+    background-color: grey;
+    height: 15%; 
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,15 +12,15 @@ const HeaderWrapper = styled.div`
     color: white;
 
     h1 {
-        margin: 0;
         font-size: 1.5em; 
+        margin: 5vh;
     }
 `;
 
 export default function Header(){
     return (
         <HeaderWrapper>
-            <h1>Final Project</h1>
+            <h1> Car Comparison Website - Final Project</h1>
         </HeaderWrapper>
     )
 }

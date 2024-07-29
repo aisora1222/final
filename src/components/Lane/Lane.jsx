@@ -11,6 +11,7 @@ const LaneWrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 
     @media (max-width: 768px) {
         margin-bottom: 5%;

@@ -5,6 +5,7 @@ import Backlog from './pages/Backlog/Backlog';
 
 const GlobalStyle = createGlobalStyle`
     body {
+        background-color: grey;
         margin: 0;
         font-family: "American Typewriter";
         display: flex;

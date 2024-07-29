@@ -12,8 +12,8 @@ const BoardWrapper = styled.div`
 `;
 
 const lanes = [
-    { id: 1, title: 'Lane 1' },
-    { id: 2, title: 'Lane 2' }
+    { id: 1, title: 'Car 1' },
+    { id: 2, title: 'Car 2' }
 ];
 
 function onDragStart(e, id) {
