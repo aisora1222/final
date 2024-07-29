@@ -14,7 +14,7 @@ const Title = styled.h3`
 `;
 const Image = styled.img`
     width: 100%;
-    height: 150px; 
+    height: auto; 
     border-radius: 10px;
     margin-top: 10px;
     display: ${props => props.show ? 'block' : 'none'};
