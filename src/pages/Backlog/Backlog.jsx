@@ -4,7 +4,8 @@ import useDataFetching from '../../hooks/useDataFetching';
 import { useEffect } from 'react';
 
 const BacklogContainer = styled.div`
-    padding: 20px;
+    padding: 3%;
+    border: 5px dashed;
 `;
 
 const Title = styled.h2`
@@ -32,7 +33,7 @@ function Backlog() {
 
     return (
         <BacklogContainer>
-            <Title>Backlog</Title>
+            <Title> Garage </Title>
             <TasksWrapper>
                 {loading || error ? (
                     <span>{error || 'Loading...'}</span>

@@ -61,14 +61,22 @@ function App() {
 
             <GlobalStyle />
             <AppWrapper>
-                <Header />
+                <Header/>
+                <div>
+                    <p>
+                    </p>
+                </div>
                 <Button onClick={() => clear()}> Reset </Button>
+                <div>
+                    <p>
+                    </p>
+                </div>
                 <ContentWrapper>
                     <BoardWrapper>
-                        <Board />
+                        <Board/>
                     </BoardWrapper>
                     <BacklogWrapper>
-                        <Backlog />
+                        <Backlog/>
                     </BacklogWrapper>
                 </ContentWrapper>
 

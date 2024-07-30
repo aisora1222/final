@@ -1,7 +1,9 @@
+/* Ethan */
 import styled from "styled-components";
 
+/* Header Styling */
 const HeaderWrapper = styled.div`
-    background-color: grey;
+    background-color: dimgrey;
     height: 15%; 
     width: 100%;
     display: flex;
@@ -17,6 +19,8 @@ const HeaderWrapper = styled.div`
     }
 `;
 
+/* Ethan */
+/* Header for the webpage */
 export default function Header(){
     return (
         <HeaderWrapper>

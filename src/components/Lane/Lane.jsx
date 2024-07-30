@@ -1,6 +1,8 @@
+/* Ethan */
 import styled from "styled-components";
 import Cars from '../Cars/Cars.jsx';
 
+/* Lane Styling */
 const LaneWrapper = styled.div`
     text-align: left;
     padding: 0;
@@ -26,7 +28,9 @@ const Title = styled.h2`
     border-bottom: 1px solid darkGray;
 `;
 
-function Lane({
+/* Ethan */
+/* Component where the cars get placed for comparison */
+export default function Lane({
                   laneId,
                   title,
                   loading,
@@ -38,11 +42,14 @@ function Lane({
                   highlightAttributes = {}
               }) {
     return (
+        /* Handles the drag and drop functionality */
         <LaneWrapper onDragOver={onDragOver} onDrop={(e) => onDrop(e, laneId)}>
             <Title>{title}</Title>
             {loading || error ? (
                 <span>{error || 'Loading...'}</span>
             ) : (
+                /* Maps car attributes to display in the lane, then passes them to
+                * the Cars function from Cars.jsx as props*/
                 tasks.map(task => (
                     <Cars
                         key={task.id}
@@ -70,4 +77,4 @@ function Lane({
     );
 }
 
-export default Lane;
+
