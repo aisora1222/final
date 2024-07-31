@@ -40,7 +40,25 @@ const InfoItem = styled.div`
 
 /* Ethan */
 /* Component that displays the Cars information based on the props being passed to it */
-export default function Cars({ id, image, manufacturer, model, year, country, category, price, zerosixty, weight, hp, torque, size, seats, onDragStart, highlightAttributes = {}, showImage }) {
+export default function Cars({
+                                 id,
+                                 image,
+                                 manufacturer,
+                                 model,
+                                 year,
+                                 country,
+                                 category,
+                                 price,
+                                 zerosixty,
+                                 weight,
+                                 hp,
+                                 torque,
+                                 size,
+                                 seats,
+                                 onDragStart,
+                                 highlightAttributes = {},
+                                 showImage
+                            }) {
     return (
         /* Makes the car draggable */
         <CarWrapper
