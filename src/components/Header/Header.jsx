@@ -16,7 +16,16 @@ const HeaderWrapper = styled.div`
     h1 {
         font-size: 1.5em; 
         margin: 5vh;
+        text-align: right;
+        animation: left_to_right 3s ease;
     }
+    @keyframes left_to_right {
+        from {
+            margin-left: -100%;
+        }
+        to {
+            margin-left: 0;
+        }
 `;
 
 /* Ethan */
