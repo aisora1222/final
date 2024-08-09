@@ -1,3 +1,4 @@
+/* Jewoo */
 import { useState, useEffect } from "react";
 
 export default function useDataFetching(dataSource) {
@@ -5,6 +6,7 @@ export default function useDataFetching(dataSource) {
     const [data, setData] = useState([]);
     const [error, setError] = useState('');
 
+    /*Check if the Data is fetched or not. Otherwise it shows the HTTP error*/
     useEffect(() => {
         async function fetchData() {
             try {
