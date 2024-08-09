@@ -1,4 +1,4 @@
-/*Jewoo Lee*/
+/*Jewoo*/
 import { useEffect, useState } from 'react';
 import useDataFetching from '../../hooks/useDataFetching';
 import Lane from '../../components/Lane/Lane';
