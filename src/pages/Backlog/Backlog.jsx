@@ -1,8 +1,9 @@
+/*Jewoo Lee*/
 import styled from 'styled-components';
 import Cars from '../../components/Cars/Cars';
 import useDataFetching from '../../hooks/useDataFetching';
 import { useEffect } from 'react';
-
+/*Styling with styled components*/
 const BacklogContainer = styled.div`
     padding: 3%;
     border: 5px dashed;
@@ -17,16 +18,17 @@ const TasksWrapper = styled.div`
     flex-wrap: wrap;
     gap: 10px;
 `;
-
+/*Fetch the Data of cars from fake Json file*/
 function Backlog() {
     const [loading, error, tasks] = useDataFetching(
         'https://my-json-server.typicode.com/aisora1222/final/cars'
     );
-
+    /*function for drag start*/
     function onDragStart(e, id) {
         e.dataTransfer.setData('id', id);
     }
-
+    /* Log the fetched tasks to the console whenever they change */
+    useEffect(() => {
     useEffect(() => {
         console.log('Tasks in Backlog:', tasks);
     }, [tasks]);
@@ -35,6 +37,7 @@ function Backlog() {
         <BacklogContainer>
             <Title> Garage </Title>
             <TasksWrapper>
+                /* Display loading or error message */
                 {loading || error ? (
                     <span>{error || 'Loading...'}</span>
                 ) : (
