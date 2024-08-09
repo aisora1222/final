@@ -25,6 +25,6 @@ export default function useDataFetching(dataSource) {
         }
         fetchData();
     }, [dataSource]);
-
+    /*Return the fetched result*/
     return [loading, error, data];
 }
