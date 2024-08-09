@@ -12,35 +12,37 @@ const BoardWrapper = styled.div`
     border: 5px dashed;
 
 `;
-
+/* Predefined cars for each lane */
 const lanes = [
     { id: 1, title: 'Car 1' },
     { id: 2, title: 'Car 2' }
 ];
-
+/* Function to handle the drag start event: store car ID */
 function onDragStart(e, id) {
     e.dataTransfer.setData('id', id);
 }
-
+/*Allowing to drop the dragging car*/
 function onDragOver(e) {
     e.preventDefault();
 }
 
 
-
+/*Fetch the Car detail from fake Json server*/
 function Board() {
     const [loading, error, data] = useDataFetching(
         'https://my-json-server.typicode.com/aisora1222/final/cars'
     );
-
+    /*use UseState to fetch and map the data*/
     const [tasks, setTasks] = useState([]);
     const [lanesData, setLanesData] = useState(lanes.map(lane => ({ ...lane, car: null })));
-
+    
+    /*utilized useEffect to update tasks when data is fetched*/
     useEffect(() => {
         console.log('Data in Board:', data);
         setTasks(data.map(task => ({ ...task, lane: null })));
     }, [data]);
 
+    /* Function to handle the drop event, assigning a car to a lane */
     function onDrop(e, laneId) {
         const id = e.dataTransfer.getData('id');
         const laneIndex = lanesData.findIndex(lane => lane.id === laneId);
@@ -49,7 +51,7 @@ function Board() {
             alert('Only one car is allowed per lane.');
             return;
         }
-
+        /*update the tasks and datas from the lane with the car assigned to the dropped lane*/
         const updatedTasks = tasks.map(task => {
             if (task.id.toString() === id) {
                 task.lane = laneId;
@@ -67,12 +69,12 @@ function Board() {
         setTasks(updatedTasks);
         setLanesData(newLanesData);
     }
-
+    /*Identify to compare the car from each lane*/
     const lane1Car = lanesData.find(lane => lane.id === 1)?.car;
     const lane2Car = lanesData.find(lane => lane.id === 2)?.car;
 
     const highlightAttributes = {};
-
+    /*Compare the two cars*/
     if (lane1Car && lane2Car) {
         const attributesToCompare = ['price', 'zerosixty', 'weight', 'size', 'hp', 'torque'];
 
